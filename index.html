@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     </script> 
+</head>
+<style>
+    #circle{
+
+        background-color: green;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        margin-top: 20px; 
+    }
+
+    
+    
+        </style>
+<body>
+    
+    <p id="text">my name is himanshu pratap
+        and i play cricket a lot!!
+    </p>
+
+    <button id ="toggle">click to toggle</button>
+
+    <div id="circle"></div>
+    
+   
+
+    
+     <script>
+        
+                 $("#circle").click(function(){
+                     $(this).animate({width:"300px"
+                     ,height:"300px",
+                     marginTop:"200px",
+                     marginLeft:"200px",
+                     } ,2000,function(){
+                         $(this).css("background-color","red");
+
+
+                     });
+                   });
+       
+        
+</script>
+    
+
+</body>
+</html>
